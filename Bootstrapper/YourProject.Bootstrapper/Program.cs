@@ -1,19 +1,31 @@
+
+using YourProject.Modules.Notifications.Api;
 using YourProject.Modules.Users.Api;
 using YourProject.Shared;
 
-var builder = WebApplication
-    .CreateBuilder(args);
+namespace YourProject.Bootstrapper;
 
-builder.Services.AddUsersModule(builder.Configuration);
-builder.Services.AddSharedFramework(builder.Configuration);
-
-var app = builder.Build();
-
-app.UseSharedFramework();
-app.UseEndpoints(endpoints =>
+internal static class Program
 {
-    endpoints.MapControllers();
-    endpoints.MapGet("/", ctx => ctx.Response.WriteAsync("YourProject API"));
-});
+    public static void Main(string[] args)
+    {
+        var builder = WebApplication
+            .CreateBuilder(args);
 
-app.Run();
+        builder.Services.AddUsersModule(builder.Configuration);
+        builder.Services.AddNotificationsModule();
+        builder.Services.AddSharedFramework(builder.Configuration);
+
+        var app = builder.Build();
+
+        app.UseSharedFramework();
+        app.UseNotificationsModule();
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapControllers();
+            endpoints.MapGet("/", ctx => ctx.Response.WriteAsync("YourProject API"));
+        });
+
+        app.Run();
+    }
+}

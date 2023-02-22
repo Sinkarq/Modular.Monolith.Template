@@ -11,7 +11,7 @@ internal static class Extensions
             .UseSwagger(options => options.RouteTemplate = "docs/{documentName}/docs.json")
             .UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/docs/v1/docs.json", "SELLit V1");
+                options.SwaggerEndpoint("/docs/v1/docs.json", "YourProject V1");
                 options.RoutePrefix = string.Empty;
             });
     
@@ -21,7 +21,7 @@ internal static class Extensions
         {
             c.SwaggerDoc("v1", new OpenApiInfo
             {
-                Title = "SELLit API",
+                Title = "YourProject API",
                 Version = "v1"
             });
 
