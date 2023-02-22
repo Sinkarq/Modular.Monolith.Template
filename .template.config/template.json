@@ -1,0 +1,25 @@
+﻿
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Sinan/Sinkarq",
+  "classifications": [ "ASP.NET Core", "WEB API", "Modular", "Monolith", "Clean Architecture", "JWT" ],
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "identity": "AspNetCore.Template",
+  "name": "ASP.NET Modular Monolith WEB API Template",
+  "shortName": "modular-monolith-api",
+  "sourceName": "YourProject",
+  "description": "This is .NET 6 Modular Monolith Template",
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": [ "src/.vs/**", ".template_config/**" ]
+        }
+      ]
+    }
+  ],
+  "preferNameDirectory": true
+}
