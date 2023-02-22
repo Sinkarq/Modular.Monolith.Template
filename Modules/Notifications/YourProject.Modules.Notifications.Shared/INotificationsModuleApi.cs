@@ -1,4 +1,6 @@
-﻿namespace YourProject.Modules.Notifications.Shared;
+﻿using System.Threading.Tasks;
+
+namespace YourProject.Modules.Notifications.Shared;
 
 public interface INotificationsModuleApi
 {

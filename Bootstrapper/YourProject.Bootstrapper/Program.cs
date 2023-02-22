@@ -1,4 +1,6 @@
 
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 using YourProject.Modules.Notifications.Api;
 using YourProject.Modules.Users.Api;
 using YourProject.Shared;

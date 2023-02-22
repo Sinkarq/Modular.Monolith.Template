@@ -1,4 +1,6 @@
-﻿namespace YourProject.Modules.Notifications.Api.Services;
+﻿using System;
+
+namespace YourProject.Modules.Notifications.Api.Services;
 
 internal interface IEmailResolver
 {

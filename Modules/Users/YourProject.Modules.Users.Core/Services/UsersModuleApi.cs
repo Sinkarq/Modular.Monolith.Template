@@ -1,4 +1,6 @@
-﻿using YourProject.Modules.Users.Shared;
+﻿using System;
+using System.Threading.Tasks;
+using YourProject.Modules.Users.Shared;
 using YourProject.Modules.Users.Shared.DTO;
 
 namespace YourProject.Modules.Users.Core.Services;

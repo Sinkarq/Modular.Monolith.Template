@@ -1,4 +1,7 @@
-﻿using YourProject.Modules.Users.Shared.DTO;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using YourProject.Modules.Users.Shared.DTO;
 
 namespace YourProject.Modules.Users.Core.Services;
 

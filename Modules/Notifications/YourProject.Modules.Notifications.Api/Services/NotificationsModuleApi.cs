@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using YourProject.Modules.Notifications.Shared;
 
 namespace YourProject.Modules.Notifications.Api.Services;

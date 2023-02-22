@@ -1,4 +1,6 @@
-﻿namespace YourProject.Shared.Time;
+﻿using System;
+
+namespace YourProject.Shared.Time;
 
 public interface IClock
 {

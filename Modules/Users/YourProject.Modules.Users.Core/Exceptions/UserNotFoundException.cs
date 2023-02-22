@@ -1,4 +1,5 @@
-﻿using YourProject.Shared.Exceptions;
+﻿using System;
+using YourProject.Shared.Exceptions;
 
 namespace YourProject.Modules.Users.Core.Exceptions;
 

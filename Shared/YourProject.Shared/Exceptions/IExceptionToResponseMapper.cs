@@ -1,4 +1,6 @@
-﻿namespace YourProject.Shared.Exceptions;
+﻿using System;
+
+namespace YourProject.Shared.Exceptions;
 
 internal interface IExceptionToResponseMapper
 {

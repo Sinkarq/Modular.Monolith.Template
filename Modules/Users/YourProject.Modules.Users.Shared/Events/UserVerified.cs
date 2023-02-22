@@ -1,3 +1,4 @@
+using System;
 using MediatR;
 
 namespace YourProject.Modules.Users.Shared.Events;

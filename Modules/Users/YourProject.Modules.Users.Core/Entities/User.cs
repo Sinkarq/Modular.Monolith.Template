@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using System;
+using Microsoft.AspNetCore.Identity;
 using YourProject.Modules.Users.Core.Exceptions;
 
 namespace YourProject.Modules.Users.Core.Entities;
